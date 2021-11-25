@@ -38,15 +38,14 @@
       </tr>
     <tr>
           <td align='center'>BERT</td>
-          <td align='center'>90.189</td> 
-          <td align='center'>90.786</td>    
-          <td align='center'>90.424</td>
+          <td align='center'>86.019</td> 
+          <td align='center'>86.458</td>    
+          <td align='center'>86.083</td>
       </tr>
         <tr>
           <td align='center'>GPT</td>
-          <td align='center'>90.735</td> 
-          <td align='center'>91.192</td>    
-          <td align='center'>90.884</td>
+          <td align='center'>87.111</td> 
+          <td align='center'>87.132</td>    
+          <td align='center'>87.077</td>
       </tr>
 </table>
-结论：与其他模型相比，预训练语言模型的分类性能最佳，尤其是GPT模型。在模型中，加入注意力机制可以提升模型的性能。
