@@ -90,8 +90,8 @@ def train(pr, bs=16):
     criterion = nn.CrossEntropyLoss()
 
     # 数据加载器
-    train_dataSet = TextDataSet('./datas/train.txt', 64, pr=pr)
-    val_dataSet = TextDataSet('./datas/val.txt', 64, pr=pr)
+    train_dataSet = TextDataSet('../datas/train.txt', 64, pr=pr)
+    val_dataSet = TextDataSet('../datas/val.txt', 64, pr=pr)
     train_dataloader = DataLoader(train_dataSet, batch_size=bs)
     val_dataloader = DataLoader(val_dataSet, batch_size=bs)
 
@@ -155,7 +155,7 @@ def test(pr, bs):
     print(model)
 
     # 数据加载器
-    test_dataSet = TextDataSet('./datas/val.txt', 64, pr=pr)
+    test_dataSet = TextDataSet('../datas/test.txt', 64, pr=pr)
     test_dataloader = DataLoader(test_dataSet, batch_size=bs)
 
     # 评测
