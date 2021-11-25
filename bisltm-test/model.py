@@ -174,14 +174,14 @@ def test(is_add_att):
     # 评测
     model.eval()
     target, pred = [], []
-    with tqdm(test_dataloader) as val_pbar:
-        for x, y in val_pbar:
+    with tqdm(test_dataloader) as test_pbar:
+        for x, y in test_pbar:
             x = torch.as_tensor(x, dtype=torch.long).to(device)
             y = torch.as_tensor(y, dtype=torch.long).to(device)
             out = model(x)
             loss = criterion(out, y)
             out = torch.argmax(torch.softmax(out, dim=-1), dim=-1)
-            val_pbar.set_description("val: loss:%s" % (loss.item()))
+            test_pbar.set_description("val: loss:%s" % (loss.item()))
             target.extend(y.detach().cpu().tolist())
             pred.extend(out.detach().cpu().tolist())
     # 计算评估指标
