@@ -3,10 +3,12 @@
 使用的模型包括BiLSTM, BiLSTM-Att, BERT和GPT, 同时使用支持向量机(SVM)作为基线模型。
 
 ### 2. 数据集介绍
+实验的数据来源于Kaggle的一个文本情感分类数据集，实验的目标预测一段给定文本的情感倾向。
 训练集：16000  
 测试集：2000  
 验证集：2000  
-情感标签：['anger', 'surprise', 'joy', 'sadness', 'love', 'fear']  
+情感标签：['anger', 'surprise', 'joy', 'sadness', 'love', 'fear'] 
+link: <a href="https://www.kaggle.com/rashikrahmanpritom/heart-attack-analysis-prediction-dataset">https://www.kaggle.com/rashikrahmanpritom/heart-attack-analysis-prediction-dataset</a>
 
 ### 3. 性能评估
 在测试集上，使用P、R、F1值来评估模型的性能, 结果如下：  
