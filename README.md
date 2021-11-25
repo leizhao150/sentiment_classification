@@ -10,7 +10,7 @@
 验证集：2000  
 情感标签：['anger', 'surprise', 'joy', 'sadness', 'love', 'fear'] 
 
-link: <a href="https://www.kaggle.com/rashikrahmanpritom/heart-attack-analysis-prediction-dataset">https://www.kaggle.com/rashikrahmanpritom/heart-attack-analysis-prediction-dataset</a>
+link: <a href="https://www.kaggle.com/praveengovi/emotions-dataset-for-nlp">https://www.kaggle.com/praveengovi/emotions-dataset-for-nlp</a>
 
 ### 3. 性能评估
 在测试集上，使用P、R、F1值来评估模型的性能, 结果如下：  
